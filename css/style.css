@@ -199,10 +199,10 @@
   margin-left: 10px;
   justify-self: start;
   align-self: center;
+  padding: 15px;
 }
 .nav .nav-centro-der .nav-der .nav-der-carrito i:hover {
   background-color: #ffd500;
-  margin-left: -5px;
   border-radius: 40%;
 }
 @media (max-width: 800px) {
