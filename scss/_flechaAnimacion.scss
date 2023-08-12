@@ -1,0 +1,31 @@
+.animacion-flecha{
+    background-color: var(--main-color-principal);
+    text-align: center;
+    .uno-abajo-flecha{
+        animation: waviy 1s infinite;   /*movimiento de la flecha*/
+        padding: 15px;
+    }
+}
+
+
+
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    40% {
+      transform: translateY(-10px)
+    }
+}
+
+.uno-flecha{
+    width: 50px;    /*tamanio de la flecha*/
+}
+
+
+
+.uno-abajo-flecha a{
+    text-decoration: none;
+    color: var(--color_gris);
+}

@@ -1,0 +1,244 @@
+
+.nav{
+    background-color: var(--main-color-principal);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    color: var(--main-color-letra);
+
+    @media (max-width:800px){
+        grid-template-columns: 50% 50%;
+    }
+
+
+    .nav-izq{
+        text-align: center;
+        .nav-logo-svg{
+            width: 100px;
+            @media (max-width:800px){
+                width: 100px;
+                margin-right: 50px;
+            }
+        }
+        .nav-nombre{
+            font-size: 45px;
+            font-weight: bold;
+            display: grid;
+            align-items: start;
+            /* height: 300px; */
+            @media (max-width:800px){
+                margin-right: 35px;
+            }
+        }
+        @media (max-width:800px){
+            text-align: end;
+        }
+    }
+
+    .fa-bars{
+        display: none;
+
+        @media (max-width:800px){
+            margin: 50px;
+            display: block;
+            font-size: 50px;
+            color: var(--main-color-letra);
+            order: -1;
+        }
+
+        &:hover + .nav-centro-der{
+            left: 0;
+            display: block;
+        }
+    }
+
+    .nav-centro-der{
+        display: grid;
+        grid-template-columns: 65% 35%;
+        .nav-centro{
+            display: grid;
+            justify-self: center;
+            width: 100%;
+            ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                font-size: 26px;
+                font-weight: bold;
+                justify-content: space-around;
+                li{
+                    text-decoration: none;
+                    cursor: pointer;
+                    padding: 10px;
+                    a{
+                        text-decoration: none;
+                        color: var(--main-color-letra);
+                        @media (max-width:800px){
+                                color: rgba(255, 255, 255, 0.575);                            
+                        
+                        }
+                    }
+
+                    &:hover{
+                        background-color: #ffd500;
+                        border-radius: 30px;
+                    }
+                    @media (max-width:800px){    
+                        padding: 30px;
+                        &:hover{
+                            /* background-color: #ffd500a9; */
+                            background-color: unset;
+                            border-radius: 50%;
+                        }
+                        &:hover a{
+                            color: rgb(255, 255, 255);
+                            font-size: 24px;
+                            transition: .5s;
+                            text-decoration: underline;
+                        }
+                    }
+                    
+                }
+                @media (max-width:800px){
+                    
+                    display: flex;
+                    flex-direction: column;
+                    /* background-color: #0035a8; */
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .nav-der{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+
+            @media (max-width:800px){
+                display: flex;
+                text-align: center;
+                color: rgba(255, 255, 255, 0.575);
+                height: 110px;
+                div{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    /* background-color: #0035a8; */
+                }
+            }
+            
+            .nav-der-login{
+                display: grid;
+                font-size: 25px;
+                margin-bottom: 12px;
+                font-weight: bold;
+                text-align: end;
+                cursor: pointer;
+                justify-self: end;
+                padding: 10px;
+                &:hover{
+                    background-color: #ffd500;
+                    border-radius: 30px;
+                }
+
+                @media (max-width:800px){
+                        margin-bottom: 0px;
+                        padding: 0px;
+                        text-align: center;
+                        justify-content: center;
+                
+                
+                    &:hover{
+                        background-color: #0035a800;
+                        color:#fff;
+                        text-decoration: underline;
+                        transition: .5s;
+                        font-size: 24px;
+                    }
+                }
+            }
+            .nav-der-carrito{
+                margin-bottom: 12px;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                display: grid;
+
+                @media (max-width:800px){
+                    justify-content: center;
+                    margin-top: 10px;
+                    &:hover i{
+                        margin-left: 10px !important;
+                        font-size: 36px;
+                        background-color: #0035a800 !important;
+                        transition: .5s;
+                    }
+                }
+
+                i{
+                    margin-left: 10px;
+                    justify-self: start;
+                    align-self: center;
+                    
+                    &:hover{
+                        background-color: #ffd500;
+                        margin-left: -5px;
+                        border-radius: 40%;
+                    }
+
+                    @media (max-width:800px){
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        justify-self: start;
+                        align-self: center;
+                        &:hover{
+                            background-color: rgba(0, 53, 168, 0);
+                            color: white;
+                        }
+                    }
+                
+                }
+                .fa-cart-shopping{
+                    font-size: 40px;
+                }
+            }
+
+        }
+
+        @media (max-width:800px){
+            display: none;
+            position: fixed;    /**/    
+            top: 0;
+            left: -400px;
+            width: 350px;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.745);
+            padding-top: 50px;
+            transition: 1s;
+            z-index: 999;
+    
+            &:hover{
+                left: 0;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width:800px){
+
+    .nav-der-carrito i:hover{
+        background-color: #ffd500;
+        border: none;
+        border: solid 0px #ffd500;
+        margin-left: -5px;
+        border-radius: 40%;
+    }
+
+
+    .nav div{
+        left: 0;
+    } 
+}
