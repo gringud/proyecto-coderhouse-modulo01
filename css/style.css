@@ -547,6 +547,11 @@ footer .footer-arriba .footer-arriba-der .redes-iconos img {
   font-size: 20px;
 }
 
+.span-especial {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .seccion02 .seccion02-contacto {
   margin-top: 50px;
   width: 80%;
@@ -613,6 +618,9 @@ footer .footer-arriba .footer-arriba-der .redes-iconos img {
   transition: 1s;
   cursor: pointer;
   color: white;
+}
+.seccion02 .seccion02-contacto .contacto-izq .seccion02-formulario .seccion02-boton .seccion02-flecha {
+  margin-top: 5px;
 }
 
 .seccion02-input {
