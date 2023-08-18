@@ -6,6 +6,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         
+        @media screen and (max-width:800px){
+            grid-template-columns: 1fr;
+         }
+        
         .contacto-izq{
             .seccion02-formulario{
                 display: grid;
@@ -97,15 +101,10 @@
     text-decoration: underline;
 }
 /***********************************/
-
-
-
-
 .incorrecto {
     display: none;
     margin-top: 10px;
 }
-
 
 /*  mapa    */
 
@@ -117,6 +116,11 @@
     .contacto-der-mapa iframe{
         width: 350px;
         height: 300px;
+
+        @media screen and (max-width:800px){
+            margin-top: 30px;
+            width: 90%;
+         }
     }
 }
 

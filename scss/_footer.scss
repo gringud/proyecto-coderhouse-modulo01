@@ -95,24 +95,21 @@ footer{
     }
 }
 .footer-abajo{
-    height: 55px;
+    height: 95px;
     background-color: #202022;
     color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    
     .footer-abajo p{
         align-self: center;
+        
     }
 
-    @media screen and (max-width:514px){
-        .footer-abajo{
-            height: 85px;
-            grid-template-columns: 1fr;
-            text-align: center;
-                
-            }
-        }
-    }
+    
+}
     .footer-abajo-copy{
         margin-left: 25px;
         @media screen and (max-width:514px){
@@ -123,6 +120,7 @@ footer{
     .footer-abajo-diseniada{
         text-align: end;
         margin-right: 25px;
+        
 
         @media screen and (max-width:514px){
 

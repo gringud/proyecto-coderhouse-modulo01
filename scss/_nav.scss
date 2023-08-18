@@ -15,7 +15,7 @@
         .nav-logo-svg{
             width: 100px;
             @media (max-width:800px){
-                width: 100px;
+                width: 80px;
                 margin-right: 50px;
             }
         }
@@ -26,6 +26,7 @@
             align-items: start;
             /* height: 300px; */
             @media (max-width:800px){
+                font-size: 35px;
                 margin-right: 35px;
             }
         }
@@ -36,15 +37,15 @@
 
     .fa-bars{
         display: none;
-
+        
         @media (max-width:800px){
             margin: 50px;
             display: block;
-            font-size: 50px;
+            font-size: 40px;
             color: var(--main-color-letra);
             order: -1;
         }
-
+        
         &:hover + .nav-centro-der{
             left: 0;
             display: block;
@@ -142,6 +143,22 @@
                     border-radius: 30px;
                 }
 
+                a{
+                    
+
+
+
+
+                    text-decoration: none;
+                    color: var(--main-color-letra);
+                    @media (max-width:800px){
+                        color: rgba(255, 255, 255, 0.575);
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+                
                 @media (max-width:800px){
                         margin-bottom: 0px;
                         padding: 0px;
@@ -162,10 +179,22 @@
                 margin-bottom: 12px;
                 text-align: center;
                 cursor: pointer;
+                /* color: var(--main-color-letra); */
                 width: 100%;
                 height: 100%;
                 display: grid;
+                text-decoration: none;
+                a{
+                    color: var(--main-color-letra);
+                    align-self: center;
+                    @media (max-width:800px){
+                        color: rgba(255, 255, 255, 0.575);
+                    }
 
+                }
+                
+                
+                
                 @media (max-width:800px){
                     justify-content: center;
                     margin-top: 10px;
