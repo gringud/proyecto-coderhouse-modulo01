@@ -1,7 +1,7 @@
 
 
 body {
-	background: var(--main-color-principal);
+	background: var(--main-fondo-gris);
 }
 
 .container { 
@@ -116,10 +116,15 @@ body {
             }
 
             input[type="submit"] {
-                background: -webkit-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%);
+                /* background: -webkit-linear-gradient(top,  rgba(254,231,154,1) 0%,rgba(254,193,81,1) 100%); */
+                background: -webkit-linear-gradient(top,  #FFF159 0%,#f4d216 100%);
+
+
+
+
                 border-radius: 30px;
                 
-                border: 1px solid #D69E31;
+                border: 1px solid #efdc06;
                 color: #85592e;
                 cursor: pointer;
                 
@@ -132,7 +137,12 @@ body {
             }
 
             input[type="submit"]:hover {
-                background: -webkit-linear-gradient(top,  rgba(254,193,81,1) 0%,rgba(254,231,154,1) 100%);
+                /* background: -webkit-linear-gradient(top,  rgba(254,193,81,1) 0%,rgba(254,231,154,1) 100%); */
+                background: -webkit-linear-gradient(top,  #f4d216 0%,#FFF159 100%);
+
+
+
+
             }
 
             div a {

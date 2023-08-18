@@ -1,4 +1,12 @@
-.seccion02{
+.contacto-seccion02{
+    display: grid;
+    padding-bottom: 30px;
+    z-index: 1;
+    position: absolute;
+    height: 600px;
+    @media screen and (max-width: 800px){
+        height: 920px;
+    }
     .seccion02-contacto{
         margin-top: 50px;
         width: 80%;

@@ -153,9 +153,9 @@
                     color: var(--main-color-letra);
                     @media (max-width:800px){
                         color: rgba(255, 255, 255, 0.575);
-                        &:hover{
-                            color: #fff;
-                        }
+                    }
+                    &:hover{
+                        color: #fff;
                     }
                 }
                 

@@ -95,7 +95,7 @@ footer{
     }
 }
 .footer-abajo{
-    height: 95px;
+    height: 99px;
     background-color: #202022;
     color: #fff;
     display: grid;
@@ -120,6 +120,7 @@ footer{
     .footer-abajo-diseniada{
         text-align: end;
         margin-right: 25px;
+        text-align: center;
         
 
         @media screen and (max-width:514px){
