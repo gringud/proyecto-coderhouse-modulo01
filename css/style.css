@@ -700,7 +700,7 @@ footer .footer-arriba .footer-arriba-der .redes-iconos img {
 }
 
 body {
-  background: rgba(220, 221, 223, 0.7607843137);
+  background: var(--main-color-principal);
 }
 
 .container {
@@ -859,3 +859,4 @@ body {
 /**********************************************/
 
 /*# sourceMappingURL=style.css.map */
+
