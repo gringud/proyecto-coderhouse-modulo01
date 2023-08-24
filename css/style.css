@@ -173,9 +173,9 @@
   .nav .nav-centro-der .nav-der .nav-der-login a {
     color: rgba(255, 255, 255, 0.575);
   }
-}
-.nav .nav-centro-der .nav-der .nav-der-login a:hover {
-  color: #fff;
+  .nav .nav-centro-der .nav-der .nav-der-login a:hover {
+    color: #fff;
+  }
 }
 @media (max-width: 800px) {
   .nav .nav-centro-der .nav-der .nav-der-login {
