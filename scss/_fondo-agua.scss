@@ -17,8 +17,8 @@
 
 
 
-
-.carrito-container{
+/*      esto lo saco pero va en otro lado   */
+/* .carrito-container{
     width: 100%;
     height: 100vh;
     min-height: 600px;
@@ -36,13 +36,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /*transparencia de la imagen*/
-    /* background-image: url(../img/imgPagina/fondo/agua-fondo.png);
-    background-repeat: repeat;
-    background-size: 37%;
-    opacity: 0.1;
-
- */
 
     background-image: url(../img/imgPagina/fondo/agua-fondo.png);
     background-repeat: repeat;
@@ -50,8 +43,8 @@
     opacity:0.2;
     filter:alpha(opacity=40); 
     background-size: 400px;
-    z-index: -1; /* manda la foto al fondo */
-}
+    z-index: -1;
+} */
 
 .fondo-agua{
     width: 100%;
@@ -86,28 +79,13 @@
 }
 
 /*modifico header del login*/
+/* .fondo-header{
+    height: 500px;
+}
+ */
+/*      esto es del login, no va aca*/
 .fondo-header{
     height: 500px;
 }
-
 /*modifico tamaño nosotros*/
 
-.nosotros-seccion02{
-    display: grid;
-    justify-items: center;
-    position: relative;
-    .fondo-todo-nosotros{
-        width: 100%;
-        display: grid;
-        position: relative;
-        grid-template-rows: 1fr;
-        .seccion02-nosotros{
-            height: 80%;
-            position: relative;
-            display: grid;
-            justify-items: center;
-            grid-template-rows: 1fr 1fr;
-        }
-
-    }    
-}
